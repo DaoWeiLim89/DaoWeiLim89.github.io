@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f9f5e9;
+}
+
+/* main Container */
+.main-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* left side */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+.banner {
+  width: 100%;
+  height: 20%
+}
+
+.banner img {
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    width: 95%;
+}
+
+.projects {
+    display: flex;
+    background-color: #f0f0f0;
+}
+
+.projects h2 {
+    text-decoration: underline;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000000;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.contact p {
+    margin: 2px 0;
+}
+
+/* Right side */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.about-section h1 {
+  font-variant: bold;
+  text-decoration: underline;
+  font-size: 50px;
+  font-weight: normal;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.ProfilePic img {
+  height: 350px;
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.about {
+    width: 80%;
+    background-color: #f0f0f0;
+    border: 2px solid #000000;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.interests h3,
+.about h3 {
+    padding-left: 5px;
+}
+
+.interests {
+    width: 80%;
+    background-color: #f0f0f0;
+    border: 2px solid #000000;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.interest-cols {
+  display: flex;
+  justify-content: space-between;
+}
+
+.interest-cols div {
+  width: 100%;
+}
+
+.interest-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+  
+.check-btn {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+  
+.check-btn.active {
+  background-color: black;
+  color: white;
+}
+
+.music-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.album-cover {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+  
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 80%;
+  margin-top: 10px;
+}
+  
+#progress-bar {
+  flex-grow: 1;
+}
+
+#now-playing-title {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+
+  
+.controls button {
+  background: none;
+  font-size: 24px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Reusable Class */
+.section-title {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-weight: normal;
+    width: 100;
+}
+
+.line {
+    height: 20px;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    margin: 5px 0;
+}
