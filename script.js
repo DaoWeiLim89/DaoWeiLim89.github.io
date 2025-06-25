@@ -68,8 +68,8 @@ const playlist = [
   {
     title: 'It Never Entered My Mind',
     artist: 'Miles Davis Quintet',
-    file: ' It Never Entered My Mind.mp3',
-    cover: ' It Never Entered My Mind.png'
+    file: 'It Never Entered My Mind.mp3',
+    cover: 'It Never Entered My Mind.png'
   },
   {
     title: 'Are You Looking Up',
