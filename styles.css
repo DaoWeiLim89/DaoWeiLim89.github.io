@@ -14,7 +14,7 @@ body {
 }
 
 /* left side */
-.container {
+.central {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,6 +186,43 @@ body {
   cursor: pointer;
 }
 
+/* Falling Object */
+.falling-objects {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  pointer-events:none;
+}
+.fall-obj {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+  flex: 1;
+  position: relative;
+  top: -10%;
+  animation: obj-fall 10s linear, obj-shake 3s ease-in-out;
+  animation-delay: var(--d);
+  animation-iteration-count: infinite;
+}
+.fall-obj img {
+  width: 15%;
+  height: auto;
+}
+@keyframes obj-fall {
+  100% {
+    top: 100%;
+  }
+}
+@keyframes obj-shake {
+  50% {
+    transform: translateX(80px);
+  }
+}
 /* Reusable Class */
 .section-title {
     background-color: black;
