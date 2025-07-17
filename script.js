@@ -36,13 +36,12 @@ function showInterest(type) {
 // Set default state
 document.addEventListener('DOMContentLoaded', () => {
   showInterest('professional');
-});
-  
-
+});  
 
 // Music Player
 const audio = document.getElementById('audio');
 const playBtn = document.getElementById('play');
+const playIcon = document.getElementById('play-icon');
 const nextBtn = document.getElementById('next');
 const prevBtn = document.getElementById('prev');
 const nowPlaying = document.getElementById('now-playing-title');
@@ -101,13 +100,14 @@ function loadSong(index) {
     albumCover.src = `covers/${song.cover}`;
     document.getElementById('song-title').textContent = song.title;
     document.getElementById('song-artist').textContent = song.artist;
-    playBtn.textContent = '▶️';
+    playIcon.src="images/MusicBtn/play-button-arrowhead.png";
+    playIcon.alt="play";
     isPlaying = false;
     progressBar.value = 0;
     currentTimeEl.textContent = '0:00';
     durationEl.textContent = '0:00';
     console.log(`Loading: music/${song.file}, covers/${song.cover}`);
-  }
+}
 
 // Format time in mm:ss
 function formatTime(seconds) {
@@ -120,10 +120,12 @@ function formatTime(seconds) {
 function togglePlay() {
   if (isPlaying) {
     audio.pause();
-    playBtn.textContent = '▶️';
+    playIcon.src="images/MusicBtn/play-button-arrowhead.png";
+    playIcon.alt="play";
   } else {
     audio.play();
-    playBtn.textContent = '⏸️';
+    playIcon.src="images/MusicBtn/pause.png";
+    playIcon.alt="pause";
   }
   isPlaying = !isPlaying;
 }
@@ -135,6 +137,7 @@ function nextSong() {
   if (isPlaying) audio.play();
 }
 
+// Prev
 function prevSong() {
   currentSong = (currentSong - 1 + playlist.length) % playlist.length;
   loadSong(currentSong);
