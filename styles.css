@@ -49,16 +49,52 @@ body {
     text-decoration: underline;
 }
 
+/* Contact Section */
 .contact {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #000000;
-    overflow: hidden;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #000000;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.contact p {
-    margin: 2px 0;
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  box-sizing: border-box;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  gap: 40px;
+}
+
+.contact-link {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000; /* or any color you like */
+}
+
+.contact-link:hover {
+  color: #4078c0; /* GitHub blue */
+}
+
+.contact-icon {
+  width: auto; /* adjust size as needed */
+  height: 36px;
+  margin-right: 8px;
+}
+
+.contact-text {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  
 }
 
 /* Right side */
@@ -145,6 +181,15 @@ body {
   color: white;
 }
 
+/* Music Plater */
+
+#prev img, #play img, #next img {
+  width: 25px;
+  height: auto;
+  margin-top: 2px;
+}
+
+
 .music-player {
   display: flex;
   flex-direction: column;
@@ -166,6 +211,7 @@ body {
   gap: 8px;
   width: 80%;
   margin-top: 10px;
+  justify-content: center;
 }
   
 #progress-bar {
