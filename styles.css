@@ -41,12 +41,11 @@ body {
 }
 
 .projects {
-    display: flex;
-    background-color: #f0f0f0;
-}
-
-.projects h2 {
-    text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #000000;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 /* Contact Section */
@@ -75,7 +74,7 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #000; /* or any color you like */
+  color: #000;
 }
 
 .contact-link:hover {
@@ -83,7 +82,7 @@ body {
 }
 
 .contact-icon {
-  width: auto; /* adjust size as needed */
+  width: auto;
   height: 36px;
   margin-right: 8px;
 }
