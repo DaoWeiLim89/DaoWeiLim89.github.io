@@ -40,12 +40,29 @@ body {
     width: 95%;
 }
 
+/* Project Section */
 .projects {
   display: flex;
   flex-direction: column;
   border: 2px solid #000000;
   overflow: hidden;
   box-sizing: border-box;
+}
+
+.project-title {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  font-weight: normal;
+  width: 100;
+}
+
+.project-block {
+    width: 80%;
+    background-color: #f0f0f0;
+    border: 2px solid #000000;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 /* Contact Section */
