@@ -13,35 +13,73 @@
         <img src="images/ricefield.jpg" alt="rice field" />
       </div>
 
+      <!-- Main Section - Left Side -->
       <div class="main-section">
         <div class="projects">
           <h2 class="section-title" style="margin: 0;">Projects</h2>
 
           <!-- Project 1: Guitar Chord Detector -->
           <div class="project-block">
-            <h2 class="project-title" style="margin: 0;">Guitar Chord Detector</h2>
-            <h3 style="margin: 5px;">
-            Meow meow meow meow meow
-            </h3>
+            <div class="project-content">
+              <h2 class="project-title">Guitar Chord Detector</h2>
+              <h3>
+              I'm a huge lover of indie rock music and I've been trying for forever to get really good at the guitar. Unfortunately despite how much I love it I'm just not very talented in it. Despite playing for years I'm still not one of those people who can just listen to a song and find out how to play it. I depend heavily on annotated chord sheets to learn songs. However, a lot of songs I listen to aren't very popular and don't have these annotated sheets. So I wanted to build a program that can generate it for me just by inputting an audio file (mp3).
+              So I built a python project that converted these MP3 files into a chromogram which I then used to identify the chords!
+              Feel free to download it and try to use it! Here's a picture of the output you can expect to get!
+              </h3>
+            </div>
+            <div class="project-image">
+              <img src="images/guitar-chord-detector.jpg" alt="Guitar Chord Detector Screenshot">
+            </div>
           </div>
 
           <!-- Project 2: 3D Gaussian Splatting - Fisher Information -->
           <div class="project-block">
-            <h2 class="project-title" style="margin: 0;">3D Gaussian Splatting - Fisher Information</h2>
-            <h3 style="margin: 5px;">
-            Meow meow meow meow meow
-            </h3>
+            <div class="project-content">
+              <h2 class="project-title">3D Gaussian Splatting - Fisher Information</h2>
+              <h3>
+              I'm currently working on a research project that explores how Fisher Information can be 
+              used to enhance the speed and quality of 3D Gaussian Splatting! Gaussian Splatting 
+              is a super cool new technique for real-time rendering of 3D scenes, but it can be extremely
+              computationally heavy and sometimes struggles with preserving fine details efficiently. My approach 
+              tries to use Fisher Information to guide where computational resources are allocated during optimization,
+              essentially trying to redirect focus onto the most informative regions of the scene. In doing so, 
+              I hope to achieve faster convergence and produce sharper, higher-quality reconstructions with
+              fewer splats!
+              <br>This project is still in progress, but I'm aiming to publish the results as part of an academic 
+              paper. Stay tuned!
+              <br><br>Here is a sample of an object we recreated! - - ->
+              </h3>
+            </div>
+            <div class="project-image">
+              <img src="images/gaussian-splatting.png" alt="3D Gaussian Splatting Project">
+            </div>
           </div>
 
           <!-- Project 3: Personal Website -->
           <div class="project-block">
-            <h2 class="project-title" style="margin: 0;">Personal Website</h2>
-            <h3 style="margin: 5px;">
-            Meow meow meow meow meow
-            </h3>
+            <div class="project-content">
+              <h2 class="project-title">Personal Website</h2>
+              <h3>
+              I've always been inspired by the MySpace era blogs people had, having just missed the 
+              boat on that. So I decided to take a stab at recreating that style using pure HTML, CSS, 
+              and JavaScript! It's been a really fun learning experience and I hope to continue adding
+              more fun stuff as time goes!
+              <br><br>(Some inspiration from this really cool website called SpaceHey) - - ->
+              </h3>
+            </div>
+            <div class="project-image">
+              <img src="images/website-preview.png" alt="Personal Website Preview">
+            </div>
+          </div>
+          <div class="project-block">
+            <div class="project-content">
+                <h2 class="project-title">You can find all these projects on my GitHub below!</h2>
+            </div>
           </div>
         </div>
 
+        <!-- Contacting Me -->
         <div class="contact">
           <h2 class="section-title" style="margin: 0;">Contacting me:</h2>
           <div class="contact-row">
@@ -49,7 +87,7 @@
               <img src="images/github.png" alt="GitHub icon" class="contact-icon">
               <span class="contact-text">GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/dao-wei-lim-006658264/" target="_blank" class="contact-link">
+            <a href="https://www.linkedin.com/in/daoweilim89" target="_blank" class="contact-link">
               <img src="images/linkedin.png" alt="LinkedIn icon" class="contact-icon">
               <span class="contact-text">LinkedIn</span>
             </a>
@@ -62,6 +100,7 @@
       </div>
     </div>
 
+    <!-- Right Column -->
     <div class="about-section">
       <h1>Dao Wei Lim</h1>
       <div class="ProfilePic">
@@ -101,6 +140,7 @@
         </div>
       </div>
 
+      <!-- Music Player -->
       <div class="music-player">
         <img id="album-cover" class="album-cover" src="" alt="Album Cover" />
         <div id="now-playing-title">
@@ -126,6 +166,7 @@
         <audio id="audio" preload="auto"></audio>
       </div>
 
+      <!-- Falling Leaves -->
       <div class="falling-objects">  
         <div class="fall-obj" style="--d: 0s, 0s;">
             <img src="images/leaf.png" loading="lazy" alt="falling leaf">
